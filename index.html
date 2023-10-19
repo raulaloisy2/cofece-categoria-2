@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    
+        <!-- Importar Bootstrap CSS desde un CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="imagenes/LogoCofece.png" alt="" width="80em"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cofece</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Idioma</a>
+                    </li>
+                    <!-- Íconos dentro del menú hamburguesa -->
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#"><i class="bi bi-facebook me-3"></i></a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#"><i class="bi bi-youtube me-3"></i></a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#"><i class="bi bi-instagram me-5"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Íconos alineados a la derecha en pantallas medianas y grandes -->
+            <div class="d-none d-lg-flex">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-facebook me-3"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-youtube me-3"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-instagram me-5"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+
+    
+    <div class="container border border-dark my-5" id="contenedorPrincipal2">
+
+        <h1 class="display-5">Listado de tipos de concentraciones</h1>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+
+                <div class="border border-dark shadow p-5 mb-5 my-2 d-flex">  <!-- Concentracion1 -->
+                    <div class="col-lg-8 col-md-10">
+                        <h1 class="display-4">Concentración de Fusión</h1>
+                        <p class="lead">Este tipo de concentración implica la unión de dos o más empresas independientes para formar una nueva empresa. 
+                            Por ejemplo, la fusión de dos empresas de telecomunicaciones para formar una nueva empresa que ofrezca servicios de telefonía móvil y fija.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-2  d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-color-Ir btn-lg ml-3 d-grid gap-2" role="button" onclick="showForm(1)">Empezar</a>   
+                    </div>
+                </div>
+
+                
+                <div class="border border-dark shadow p-5 mb-5 my-2 d-flex"> <!-- Concentracion2 -->
+                    <div class="col-lg-8 col-md-10"> 
+                        <h1 class="display-4">Concentración de Adquisición del control</h1>
+                        <p class="lead">Este tipo de concentración implica la compra de una participación mayoritaria en una empresa. 
+                            Por ejemplo, la adquisición de una empresa de software por parte de una empresa de tecnología que adquiere el control de la empresa de software.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-2 d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-color-Ir btn-lg ml-3" role="button" onclick="showForm(2)">Empezar</a>
+                    </div>
+                </div>
+
+
+                <div class="border border-dark shadow p-5 mb-5 my-2 d-flex"> <!-- Concentracion3 -->
+                    <div class="col-8">
+                        <h1 class="display-4">Concentración de Adquisición de activos</h1>
+                        <p class="lead">Este tipo de concentración implica cualquier acto por virtud del cual se unan sociedades, asociaciones, acciones, partes sociales, fideicomisos o activos en general. 
+                            Por ejemplo, la adquisición de una fábrica de producción de alimentos por parte de una empresa de alimentos.</p>
+                    </div>
+                    <div class="col-4 d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-color-Ir btn-lg ml-3" role="button">Empezar</a>
+                    </div>
+                </div>
+
+
+                <div class="border border-dark shadow p-5 mb-5 my-2 d-flex"> <!-- Concentracion4 -->
+                    <div class="col-8">
+                        <h1 class="display-4">Concentración de Acuerdos de colaboración entre agentes económicos</h1>
+                        <p class="lead">Este tipo de concentración implica la unión de dos o más empresas para colaborar en un proyecto o actividad específica. 
+                            Por ejemplo, la colaboración entre dos empresas de energía para desarrollar un proyecto de energía renovable.</p>
+                    </div>
+                    <div class="col-4 d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-color-Ir btn-lg ml-3" role="button">Empezar</a>
+                    </div>
+                </div>
+
+
+                <div class="border border-dark shadow p-5 mb-5 my-2 d-flex"> <!-- Concentracion5 -->
+                    <div class="col-8">
+                        <h1 class="display-4">Concentración de Agente Económico y grupo de interés económico</h1>
+                        <p class="lead">Este tipo de concentración implica la unión de dos o más empresas para formar un grupo de interés económico. 
+                            Por ejemplo, la unión de dos empresas de construcción para formar un grupo de interés económico que se especialice en proyectos de infraestructura.</p>
+                    </div>
+                    <div class="col-4 d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-color-Ir btn-lg ml-3" role="button">Empezar</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <form id="form1" style="display: none;">
+        <h3>Formulario 1</h3>
+        <div class="form-group">
+            <label for="opciones1">¿El valor de los activos de la concentración de las empresas es mayor a $1,870,000,000.00 MXN?</label>
+            <div class="form-check">
+                <input type="radio" class="form-check-input">
+                <label class="form-check-label">Sí</label>
+            </div>
+            <div class="form-check">
+                <input type="radio"  class="form-check-input">
+                <label class="form-check-label">No</label>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button type="button" onclick="showForm(2)" class="btn btn-primary">Siguiente</button>
+        </div>
+    </form>
+    
+
+    <form id="form2" style="display: none;">
+        <h3>Formulario 2</h3>
+        <div class="form-group">
+            <label for "opciones2">¿La concentración implica la adquisición de una participación accionaria mayoritaria en una empresa?</label>
+            <div class="form-check">
+                <input type="radio" name="opciones2" id="si2" value="si" class="form-check-input">
+                <label class="form-check-label" for="si2">Sí</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="opciones2" id="no2" value="no" class="form-check-input">
+                <label class="form-check-label" for="no2">No</label>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button type="button" onclick="showForm(0)" class="btn btn-primary mr-2">Atrás</button>
+            <button type="button" onclick="showForm(3)" class="btn btn-primary">Siguiente</button>
+        </div>
+    </form>
+
+    <script>
+        function showForm(formNumber) {
+            document.getElementById('contenedorPrincipal2').style.display = 'none';
+            
+            document.getElementById('form1').style.display = 'none';
+            document.getElementById('form2').style.display = 'none';
+
+            if(formNumber === 0){
+                document.getElementById('contenedorPrincipal2').style.display = 'block';
+            } else if (formNumber === 1) {
+                document.getElementById('form1').style.display = 'block';
+            } else if (formNumber === 2) {
+                document.getElementById('form2').style.display = 'block';
+            } 
+        }
+    </script>
+</body>
+</html>
