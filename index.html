@@ -86,7 +86,7 @@
                             Por ejemplo, la adquisición de una empresa de software por parte de una empresa de tecnología que adquiere el control de la empresa de software.</p>
                     </div>
                     <div class="col-lg-4 col-md-2 d-flex align-items-center justify-content-end">
-                        <a href="#" class="btn btn-color-Ir btn-lg ml-3" role="button" onclick="showForm(2)">Empezar</a>
+                        <a href="#" class="btn btn-color-Ir btn-lg ml-3" role="button" onclick="showForm()">Empezar</a>
                     </div>
                 </div>
 
@@ -126,62 +126,74 @@
                     </div>
                 </div>
 
-
+                <p>
+                    <a href="#">
+                        Quiere Comunicarse con la COFECE?
+                    </a>
+                </p>
             </div>
         </div>
     </div>
 
-    <form id="form1" style="display: none;">
-        <h3>Formulario 1</h3>
-        <div class="form-group">
-            <label for="opciones1">¿El valor de los activos de la concentración de las empresas es mayor a $1,870,000,000.00 MXN?</label>
-            <div class="form-check">
-                <input type="radio" class="form-check-input">
-                <label class="form-check-label">Sí</label>
-            </div>
-            <div class="form-check">
-                <input type="radio"  class="form-check-input">
-                <label class="form-check-label">No</label>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between">
-            <button type="button" onclick="showForm(2)" class="btn btn-primary">Siguiente</button>
-        </div>
-    </form>
+
+
+
+    <!-- Forms---------------------------------------------------------------------------------->
     
 
-    <form id="form2" style="display: none;">
-        <h3>Formulario 2</h3>
-        <div class="form-group">
-            <label for "opciones2">¿La concentración implica la adquisición de una participación accionaria mayoritaria en una empresa?</label>
-            <div class="form-check">
-                <input type="radio" name="opciones2" id="si2" value="si" class="form-check-input">
-                <label class="form-check-label" for="si2">Sí</label>
+<div class="container mt-5 text border border-dark my-5 p-4" id="fusion1"  style="display: none; ">
+    <form action="">
+        
+            <legend>
+                <h2 class="fw-bold">
+                    La Concentración de Fusión que deseas realizar, ¿Cumple con los siguientes requisitos?
+                </h2>
+                <h5 class="fw-bold">
+                Esto determinará si es necesario realizar una notificación
+                </h5>
+            </legend>
+            <ul class="fw-normal">
+                <li>
+                    <p>La fusión implica la unión de dos o más empresas independientes para formar una nueva empresa. </p>
+                </li>
+                <li>
+                    <p>La notificación es obligatoria si la fusión cumple con ciertos umbrales monetarios establecidos en la Ley Federal de Competencia Económica (LFCE).</p>
+                </li>
+                <li>
+                    <p>La notificación también es obligatoria si la fusión involucra a empresas que compiten en el mismo mercado.</p>        
+                </li>
+
+            </ul>
+            <div class="row">
+                <div class="d-grid gap-5 col-lg-7 col-md-2 d-flex align-items-lg-start">
+                    <button type="button" class="btn btn-outline-secondary " onclick="showForm(0)">Atras</button>
+                </div>
+                <div class="d-grid gap-5 col-lg-4 col-md-2  d-flex align-items-end justify-content-end">
+                    <a type="button" class="btn btn-outline-secondary" href="#" >No</a>
+                    <a type="button" class="btn btn-color-Ir " href="#">Si </a>
+                </div>
             </div>
-            <div class="form-check">
-                <input type="radio" name="opciones2" id="no2" value="no" class="form-check-input">
-                <label class="form-check-label" for="no2">No</label>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between">
-            <button type="button" onclick="showForm(0)" class="btn btn-primary mr-2">Atrás</button>
-            <button type="button" onclick="showForm(3)" class="btn btn-primary">Siguiente</button>
-        </div>
+        
     </form>
+</div>
+
+
+
+
+
+
+
+
 
     <script>
         function showForm(formNumber) {
             document.getElementById('contenedorPrincipal2').style.display = 'none';
-            
-            document.getElementById('form1').style.display = 'none';
-            document.getElementById('form2').style.display = 'none';
+            document.getElementById('fusion1').style.display = 'none';
 
             if(formNumber === 0){
                 document.getElementById('contenedorPrincipal2').style.display = 'block';
             } else if (formNumber === 1) {
-                document.getElementById('form1').style.display = 'block';
-            } else if (formNumber === 2) {
-                document.getElementById('form2').style.display = 'block';
+                document.getElementById('fusion1').style.display = 'block';
             } 
         }
     </script>
