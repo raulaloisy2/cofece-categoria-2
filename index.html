@@ -8,7 +8,7 @@
         <!-- Importar Bootstrap CSS desde un CDN -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
-    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -58,7 +58,25 @@
                 </ul>
             </div>
         </div>
-    </nav>  
+    </nav>    
+    <div class="container-fluid bg-light">
+        <div class="row mb-3 bg-secondary bg-opacity-25 flex-column flex-md-row justify-content-between p-1">
+            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center">
+                <a href="#" class="ms-5 text-dark text-decoration-none">Publicaciones</a>
+                <a href="#" class="ms-3 text-dark text-decoration-none">Convocatorias</a>
+                <a href="#" class="ms-3 text-dark text-decoration-none">Reporte Mensual</a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end mt-1">
+                <div style="width: 15em" class="p-3 bg-success bg-opacity-75 rounded-5">
+                    <button><img src="imagenes/search.png" alt="" width="20em"></button>
+                    <input type="text" style="width: 70%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div style="padding-top: 1em;" class="bg-success bg-opacity-75 mt-2"></div>
 
     
     <div class="container border border-dark my-5" id="contenedorPrincipal2">
@@ -138,53 +156,44 @@
 
 
 
-    <!-- Forms---------------------------------------------------------------------------------->
-    
-
-<div class="container mt-5 text border border-dark my-5 p-4" id="fusion1"  style="display: none; ">
-    <form action="">
+        <!-- Forms---------------------------------------------------------------------------------->
         
-            <legend>
-                <h2 class="fw-bold">
-                    La Concentración de Fusión que deseas realizar, ¿Cumple con los siguientes requisitos?
-                </h2>
-                <h5 class="fw-bold">
-                Esto determinará si es necesario realizar una notificación
-                </h5>
-            </legend>
-            <ul class="fw-normal">
-                <li>
-                    <p>La fusión implica la unión de dos o más empresas independientes para formar una nueva empresa. </p>
-                </li>
-                <li>
-                    <p>La notificación es obligatoria si la fusión cumple con ciertos umbrales monetarios establecidos en la Ley Federal de Competencia Económica (LFCE).</p>
-                </li>
-                <li>
-                    <p>La notificación también es obligatoria si la fusión involucra a empresas que compiten en el mismo mercado.</p>        
-                </li>
 
-            </ul>
-            <div class="row">
-                <div class="d-grid gap-5 col-lg-7 col-md-2 d-flex align-items-lg-start">
-                    <button type="button" class="btn btn-outline-secondary " onclick="showForm(0)">Atras</button>
+    <div class="container mt-5 text border border-dark my-5 p-4" id="fusion1"  style="display: none; ">
+        <form action="">
+            
+                <legend>
+                    <h2 class="fw-bold">
+                        La Concentración de Fusión que deseas realizar, ¿Cumple con los siguientes requisitos?
+                    </h2>
+                    <h5 class="fw-bold">
+                    Esto determinará si es necesario realizar una notificación
+                    </h5>
+                </legend>
+                <ul class="fw-normal">
+                    <li>
+                        <p>La fusión implica la unión de dos o más empresas independientes para formar una nueva empresa. </p>
+                    </li>
+                    <li>
+                        <p>La notificación es obligatoria si la fusión cumple con ciertos umbrales monetarios establecidos en la Ley Federal de Competencia Económica (LFCE).</p>
+                    </li>
+                    <li>
+                        <p>La notificación también es obligatoria si la fusión involucra a empresas que compiten en el mismo mercado.</p>        
+                    </li>
+
+                </ul>
+                <div class="row">
+                    <div class="d-grid gap-5 col-lg-7 col-md-2 d-flex align-items-lg-start">
+                        <button type="button" class="btn btn-outline-secondary " onclick="showForm(0)">Atras</button>
+                    </div>
+                    <div class="d-grid gap-5 col-lg-4 col-md-2  d-flex align-items-end justify-content-end">
+                        <a type="button" class="btn btn-outline-secondary" href="#" >No</a>
+                        <a type="button" class="btn btn-color-Ir " href="#">Si </a>
+                    </div>
                 </div>
-                <div class="d-grid gap-5 col-lg-4 col-md-2  d-flex align-items-end justify-content-end">
-                    <a type="button" class="btn btn-outline-secondary" href="#" >No</a>
-                    <a type="button" class="btn btn-color-Ir " href="#">Si </a>
-                </div>
-            </div>
-        
-    </form>
-</div>
-
-
-
-
-
-
-
-
-
+            
+        </form>
+    </div>
     <script>
         function showForm(formNumber) {
             document.getElementById('contenedorPrincipal2').style.display = 'none';
@@ -197,5 +206,7 @@
             } 
         }
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
